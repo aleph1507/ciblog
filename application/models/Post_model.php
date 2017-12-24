@@ -14,5 +14,9 @@
 
 			return $query->row_array();
 		}
+
+		public function create_post(){
+			$slug = url_title($this->input->post());
+		}
 	}
 ?>
